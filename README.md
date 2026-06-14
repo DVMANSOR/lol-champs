@@ -7,6 +7,12 @@
 
 ---
 
+![lol-champs flow diagram](docs/lol-champs-flow.svg)
+
+*Drag [`docs/lol-champs-flow.excalidraw`](docs/lol-champs-flow.excalidraw) into [excalidraw.com](https://excalidraw.com) to edit the diagram.*
+
+---
+
 **What the hell is this?**
 
 A Python library that scrapes Riot's Data Dragon CDN for every champion,

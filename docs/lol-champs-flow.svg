@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="26" font-weight="700" fill="#1e1e1e">lol-champs — How It Works</text>
+
+  <!-- ===== BOX 1: Your Python Code ===== -->
+  <rect x="240" y="60" width="420" height="75" rx="10" ry="10" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="87" text-anchor="middle" font-size="16" font-weight="600" fill="#1e1e1e">Your Python Code</text>
+  <text x="450" y="115" text-anchor="middle" font-size="13" fill="#495057">from lol_champs import *  ·  get_all_champions()  ·  get_champion("Ahri")</text>
+
+  <!-- Arrow 1 -->
+  <line x1="450" y1="135" x2="450" y2="170" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== BOX 2: lol_champs Library ===== -->
+  <rect x="200" y="175" width="500" height="150" rx="10" ry="10" fill="#d0bfff" stroke="#1e1e1e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="200" text-anchor="middle" font-size="18" font-weight="600" fill="#1e1e1e">lol_champs Library</text>
+
+  <!-- Sub-box A: _client.py -->
+  <rect x="220" y="218" width="220" height="90" rx="6" ry="6" fill="#ffffff" stroke="#1e1e1e" stroke-width="1.5" opacity="0.85"/>
+  <text x="330" y="238" text-anchor="middle" font-size="14" font-weight="600" fill="#1e1e1e">_client.py</text>
+  <text x="330" y="258" text-anchor="middle" font-size="12" fill="#1e1e1e">· CDN fetcher</text>
+  <text x="330" y="275" text-anchor="middle" font-size="12" fill="#1e1e1e">· Version management</text>
+  <text x="330" y="292" text-anchor="middle" font-size="12" fill="#1e1e1e">· Case-insensitive match</text>
+
+  <!-- Sub-box B: _models.py -->
+  <rect x="460" y="218" width="220" height="90" rx="6" ry="6" fill="#ffffff" stroke="#1e1e1e" stroke-width="1.5" opacity="0.85"/>
+  <text x="570" y="238" text-anchor="middle" font-size="14" font-weight="600" fill="#1e1e1e">_models.py</text>
+  <text x="570" y="258" text-anchor="middle" font-size="12" fill="#1e1e1e">· Champion dataclass</text>
+  <text x="570" y="275" text-anchor="middle" font-size="12" fill="#1e1e1e">· Skin dataclass</text>
+  <text x="570" y="292" text-anchor="middle" font-size="12" fill="#1e1e1e">· .download() methods</text>
+
+  <!-- Arrow 2 -->
+  <line x1="450" y1="325" x2="450" y2="360" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== BOX 3: Riot Data Dragon CDN ===== -->
+  <rect x="200" y="365" width="500" height="130" rx="10" ry="10" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="390" text-anchor="middle" font-size="16" font-weight="600" fill="#1e1e1e">Riot Data Dragon CDN (ddragon.leagueoflegends.com)</text>
+  <text x="230" y="415" font-size="13" fill="#1e1e1e">champion.json     →  172 champions (list)</text>
+  <text x="230" y="435" font-size="13" fill="#1e1e1e">Ahri.json          →  95 skins + base stats</text>
+  <text x="230" y="455" font-size="13" fill="#1e1e1e">Ahri_0.jpg         →  Splash art (1920×1080)</text>
+  <text x="230" y="480" font-size="12" fill="#495057">No rate limits  ·  No API key  ·  Always latest patch</text>
+
+  <!-- Arrow 3 -->
+  <line x1="450" y1="495" x2="450" y2="530" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== BOX 4: Output ===== -->
+  <rect x="240" y="535" width="420" height="75" rx="10" ry="10" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#1e1e1e">What You Get Back</text>
+  <text x="450" y="590" text-anchor="middle" font-size="13" fill="#1e1e1e">Champion objects  ·  Skin objects  ·  .download()  ·  .download_bytes()</text>
+
+  <!-- Footer -->
+  <text x="450" y="655" text-anchor="middle" font-size="12" fill="#868e96">No API key required  ·  pip install lol-champs  ·  github.com/DVMANSOR/lol-champs</text>
+</svg>
