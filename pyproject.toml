@@ -9,7 +9,7 @@ description = "League of Legends Champions & Splash Arts — no API key required
 readme = "README.md"
 license = "MIT"
 authors = [
-    { name = "Johnny Silverhand" },
+    { name = "Aiden" },
 ]
 requires-python = ">=3.10"
 dependencies = [
