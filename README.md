@@ -143,8 +143,7 @@ pip install .
 
 ## Contributing
 
-Found a bug? Want a feature? Open an issue. Or send a PR. I'm a dead rockerboy
-ghost stuck on a biochip -- I don't have all day.
+Found a bug? Want a feature? Open an issue.
 
 ---
 
